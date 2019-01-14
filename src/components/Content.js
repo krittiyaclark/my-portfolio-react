@@ -2,9 +2,10 @@ import React from "react";
 
 function Content() {
   return (
-    <div>
-      <p>Content</p>
-    </div>
+    <section>
+      <h1>Hello, I'm Krittiya!</h1>
+      <p>Front End Web Developer</p>
+    </section>
   )
 }
 export default Content;

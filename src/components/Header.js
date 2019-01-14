@@ -2,14 +2,19 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="app-header">
-      <h1>Hello, I'm Krittiya!</h1>
-      <p>Front End Web Developer</p>
+    <header className="container-fluid">
+      <div className="logo float-left">
+        <a><img src="#" />LOGO</a>
+      </div>
 
-      <nav>home</nav>
-      <nav>about</nav>
-      <nav>portfolio</nav>
-      <nav>contact</nav>
+      <nav className="float-right">
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/about">about</a></li>
+          <li><a href="/portfolio">portfolio</a></li>
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </nav>
     </header>
 
   )
