@@ -1,22 +1,32 @@
-import React from "react";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-function Header() {
-  return (
-    <header className="container-fluid">
-      <div className="logo float-left">
-        <a><img src="#" />LOGO</a>
-      </div>
+class Header extends Component {
+  render() {
+    return (
+      <header className='container-fluid'>
+        <div className='logo float-left'>
+          <a><img src='#' />LOGO</a>
+        </div>
 
-      <nav className="float-right">
-        <ul>
-          <li><a href="/">home</a></li>
-          <li><a href="/about">about</a></li>
-          <li><a href="/portfolio">portfolio</a></li>
-          <li><a href="/contact">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-  )
+        <nav className='float-right'>
+          <ul>
+            <li>
+              <Link to='/'>home</Link>
+              </li>
+            <li>
+              <Link to='/About'>about</Link>
+              </li>
+            <li>
+              <Link to='/Portfolio'>portfolio</Link>
+              </li>
+            <li>
+              <Link to='/Contact'>contact</Link>
+              </li>
+          </ul>
+        </nav>
+      </header>
+    )
+  }
 }
 export default Header;
