@@ -1,5 +1,12 @@
 @import "config.scss";
 
+.main-bg {
+  background: url('http://www.getmdl.io/assets/demos/transparent.jpg') center / cover;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 header {
   display: block;
   position: relative;

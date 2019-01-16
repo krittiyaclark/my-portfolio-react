@@ -20,18 +20,23 @@ import './Assets/css/default.min.css';
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Header />
+      <div style={{height: '100%'}}>
+        <div className='main-bg'>
+          <Router>
+            <div>
+              <Header />
 
-            <Route exact path='/' component={Home} />
-            <Route exact path='/About' component={About} />
-            <Route exact path='/Portfolio' component={Portfolio} />
-            <Route exact path='/Contact' component={Contact} />
+                <Route exact path='/' component={Home} />
+                <Route exact path='/About' component={About} />
+                <Route exact path='/Portfolio' component={Portfolio} />
+                <Route exact path='/Contact' component={Contact} />
 
-          <Footer />
+              <Footer />
+            </div>
+          </Router>
         </div>
-      </Router>
+      </div>
+
     )
   }
 }
