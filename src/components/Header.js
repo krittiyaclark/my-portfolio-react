@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <header className='container-fluid'>
         <div className='logo float-left'>
-          <a><img src='#' />LOGO</a>
+          <Link to='/'><i className="fas fa-terminal"></i></Link>
         </div>
 
         <nav className='float-right'>

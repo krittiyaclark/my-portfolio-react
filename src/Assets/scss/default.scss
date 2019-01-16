@@ -21,6 +21,11 @@
 }
 
 /* HEADER */
+.logo i {
+  color: $white;
+  font-size: 29px;
+}
+
 header {
   display: block;
   position: relative;
@@ -123,5 +128,22 @@ nav {
     color: white;
     font-size: 5em;
     padding: 8px;
+  }
+}
+
+/* Footer */
+.contact {
+  background-color: #f5f5dcab;
+  padding: 2rem 0;
+
+  i {
+    color: $darkGrey;
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+      height: 100vh;
   }
 }
