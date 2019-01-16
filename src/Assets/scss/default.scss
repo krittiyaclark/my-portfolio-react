@@ -1,12 +1,26 @@
-@import "config.scss";
+@import 'config.scss';
 
-.main-bg {
-  background: url('http://www.getmdl.io/assets/demos/transparent.jpg') center / cover;
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
+/* HOME PAGE SET UP */
+.wrapper {
+  height: 100%;
+
+  .main-bg {
+    background-image: url('http://www.getmdl.io/assets/demos/transparent.jpg');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Full height */
+    height: 100%;
+
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 
+/* HEADER */
 header {
   display: block;
   position: relative;
@@ -41,10 +55,10 @@ nav {
     display: inline-block;
     margin-right: 10px;
 
-    ul li:nth-last-child() {
+    &:nth-last-child(1) {
       margin: 0;
     }
-
+}
     a {
       font-size: 19px;
       line-height: normal;
@@ -54,20 +68,60 @@ nav {
         text-decoration: none;
       }
     }
-  }
+
 }
 
+/* HOME PAGE CONTENT */
+.page-content-container {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.1)),to(rgba(255,255,255,.1)));
+  background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
 
+  h1 {
+    font-size: 66px;
+    font-weight: bold;
+    color: $white;
+  }
 
+    hr {
+      border-top: 5px dotted $white;
+      width: 50%;
+      margin: auto;
+    }
 
-.app-header {
-  background-color: #282c34;
-  min-height: 100vh;
+      p {
+        color: $white;
+        font-size: 20px;
+        padding: 1em;
+      }
+}
+
+.social-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+
+  i {
+    color: white;
+    font-size: 5em;
+    padding: 8px;
+  }
 }

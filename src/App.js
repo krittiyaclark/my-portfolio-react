@@ -20,7 +20,7 @@ import './Assets/css/default.min.css';
 class App extends Component {
   render() {
     return (
-      <div style={{height: '100%'}}>
+      <div className="wrapper">
         <div className='main-bg'>
           <Router>
             <div>
