@@ -10,10 +10,10 @@ function Footer() {
           <div className='col-sm'>
             <h1>Let's Get In Touch!</h1>
 
-            <hr />
+            <hr className='line'/>
 
             <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-            <p><i className='fas fa-envelope-square'></i></p>
+            <p><a href='mailto:solution.stack99@gmail.com'><i className='fas fa-envelope-square'></i></a></p>
             </div>
           </div>
 

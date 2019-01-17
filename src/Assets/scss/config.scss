@@ -5,6 +5,7 @@ $white: #ffffff;
 $lightGrey: #e6e6e6;
 $darkGrey: #333333;
 $red: #ff1755;
+$yellow: #fed136;
 
 /* Mixins */
 
@@ -41,4 +42,12 @@ a {
 
 .container-fluid {
     line-height: 24px;
+}
+
+.line {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 50px;
+  border-width: 3px;
+  border-color: $yellow;
 }
