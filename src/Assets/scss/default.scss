@@ -1,7 +1,22 @@
 @import "config.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
 html, body{
   height: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: $font-family;
+  font-weight: $font-light-weight;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #f05f40;
 }
 
 .wrapper {
@@ -10,19 +25,16 @@ html, body{
 }
 
 .full-screen {
-  background: #0F2027;  /* fallback for old browsers */
+  background: #0F2027;
+  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* Center and scale the image nicely */
   background-position: center;
-  // background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
-  // min-width: 100%;
-  // max-height: 100%;
   height: 100vh;
-  // min-height: 650px;
   margin: 0;
 
   position: relative;
@@ -79,27 +91,23 @@ nav {
 }
 
 .banner-text {
-  background-color: black;
   opacity: .8;
   width: 75%;
   margin: auto;
   border-radius: 10px;
 
   h1 {
-    font-size: 66px;
-    font-weight: bold;
+    font-size: $font-size-large;
     color: $white;
   }
 
     hr {
-      border-top: 5px dotted $white;
-      width: 50%;
-      margin: auto;
+        margin: auto;
     }
 
       p {
         color: $white;
-        font-size: 20px;
+        font-size: $font-size-nornal;
         padding: 1em;
       }
 }
