@@ -20,8 +20,8 @@ import './Assets/css/default.min.css';
 class App extends Component {
   render() {
     return (
-      <div style={{height: '100%'}}>
-        <div className='main-bg'>
+      <div className='wrapper'>
+        <div className='full-screen'>
           <Router>
             <div>
               <Header />
@@ -31,7 +31,6 @@ class App extends Component {
                 <Route exact path='/Portfolio' component={Portfolio} />
                 <Route exact path='/Contact' component={Contact} />
 
-              <Footer />
             </div>
           </Router>
         </div>
