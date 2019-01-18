@@ -1,66 +1,59 @@
-@import 'config.scss';
+@import "config.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html, body{
+  height: 100%;
 }
 
-/* HOME PAGE SET UP */
+h1,
+h2,
+h3,
+p {
+  font-family: $font-family;
+  font-weight: $font-light-weight;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #f05f40;
+}
+
 .wrapper {
   height: 100%;
-
-  // .main-bg {
-  //   background-image: url('http://www.getmdl.io/assets/demos/transparent.jpg');
-  //   /* Center and scale the image nicely */
-  //   background-position: center;
-  //   background-attachment: scroll;
-  //   background-repeat: no-repeat;
-  //   background-size:100% 100%;
-  //
-  //   /* Full height */
-  //   height: 100%;
-  //
-  //   position: relative;
-  //   min-width: 100%;
-  //   min-height: 100%;
-  //
-  //   margin: 0;
-  //   padding: 0;
-  // }
-}
-
-/* HEADER */
-.logo i {
-  color: $white;
-  font-size: 29px;
-}
-
-header.masthead {
-  position: relative;
-  display: grid;
   width: 100%;
+}
 
-  background-image: url('http://www.getmdl.io/assets/demos/transparent.jpg');
+.full-screen {
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* Center and scale the image nicely */
   background-position: center;
-  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  //
-  // /* Full height */
-  // height: 100%;
-
-  // position: relative;
-  min-width: 100%;
-  max-height: 100%;
-
-  margin: 0;
+  background-attachment: fixed;
   height: 100vh;
-  min-height: 650px;
+  margin: 0;
 
+  position: relative;
+}
+
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: $black;
   color: $white;
+  height: 60px;
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    @include translateY(-50%);
+  }
 }
 
 nav,
@@ -81,10 +74,10 @@ nav {
     display: inline-block;
     margin-right: 10px;
 
-    &:nth-last-child(1) {
+    ul li:nth-last-child(1) {
       margin: 0;
     }
-}
+
     a {
       font-size: 19px;
       line-height: normal;
@@ -94,68 +87,27 @@ nav {
         text-decoration: none;
       }
     }
+  }
 }
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-.navbar {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: .5rem 1rem;
-    width: 100%;
-    height: 80px;
-    top: 36%;
-
-      .container,
-      .container-fluid {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -ms-flex-align: center;
-          align-items: center;
-          -ms-flex-pack: justify;
-          justify-content: space-between;
-      }
-}
-
-/* HOME PAGE CONTENT */
 
 .banner-text {
-  background-color: black;
   opacity: .8;
   width: 75%;
   margin: auto;
   border-radius: 10px;
 
   h1 {
-    font-size: 66px;
-    font-weight: bold;
+    font-size: $font-size-large;
     color: $white;
   }
 
     hr {
-      border-top: 5px dotted $white;
-      width: 50%;
-      margin: auto;
+        margin: auto;
     }
 
       p {
         color: $white;
-        font-size: 20px;
+        font-size: $font-size-nornal;
         padding: 1em;
       }
 }
@@ -173,20 +125,10 @@ nav {
   }
 }
 
-/* Footer */
-.contact {
-  background-color: #f5f5dcab;
-  padding: 2rem 0;
-
-  i {
-    color: $darkGrey;
-    font-size: 52px;
-  }
+.hori-centered {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-// @media (min-width: 992px) {
-//   .page-content-container {
-//     padding-top: calc(6rem + 72px);
-//     padding-bottom: 6rem;
-//   }
-// }
