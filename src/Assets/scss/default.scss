@@ -1,44 +1,7 @@
 @import "config.scss";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
-html, body{
-  height: 100%;
-}
-
-h1,
-h2,
-h3,
-p {
-  font-family: $font-family;
-  font-weight: $font-light-weight;
-}
-
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: #f05f40;
-}
-
-.wrapper {
-  height: 100%;
-  width: 100%;
-}
-
-.full-screen {
-  background: #0F2027;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  height: 100vh;
-  margin: 0;
-
-  position: relative;
-}
+/* HEADER */
 
 header {
   display: block;
@@ -55,6 +18,8 @@ header {
     @include translateY(-50%);
   }
 }
+
+/* HEADER NAVIGATION */
 
 nav,
 nav ul,
@@ -89,6 +54,8 @@ nav {
     }
   }
 }
+
+/* HOME PAGE CONETENT */
 
 .banner-text {
   opacity: .8;
@@ -125,10 +92,4 @@ nav {
   }
 }
 
-.hori-centered {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+/* ABOUT PAGE CONETENT */

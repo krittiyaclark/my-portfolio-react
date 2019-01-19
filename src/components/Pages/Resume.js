@@ -3,16 +3,18 @@ import React, { Component } from 'react';
 class Resume extends Component {
   render() {
     return (
-      <main className="container-fluid text-center">
-        <div className="my-auto container">
-          <div className="row">
-            <div className="col-sm">
+      <section className='container-fluid text-center'>
+          <div className='container hori-centered'>
+            <div className='row'>
+              <div className='col-sm'>
+                <div className='banner-text-content'>
+                  <p>Front-End Web Developer Resume</p>
+                </div>
+               </div>
             </div>
-        </div>
-      </div>
-
-    </main>
+         </div>
+      </section>
     )
   }
 }
-export default Resume;
+export default Resume

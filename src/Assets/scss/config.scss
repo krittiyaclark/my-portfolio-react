@@ -8,6 +8,7 @@ $red: #ff1755;
 $font-family: 'Montserrat';
 $font-light-weight: 200;
 $font-size-nornal: 18px;
+$font-size-medium: 30px;
 $font-size-large: 45px;
 
 
@@ -33,6 +34,18 @@ body {
     font-style: normal;
 }
 
+html, body{
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: $font-family;
+  font-weight: $font-light-weight;
+}
+
 a {
     text-decoration: none;
     @include transition(.4s ease-in-out);
@@ -44,6 +57,55 @@ a {
     }
 }
 
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #f05f40;
+}
+
 .container-fluid {
     line-height: 24px;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.full-screen {
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+
+  position: relative;
+}
+
+.hori-centered {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.banner-text-content {
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+
+      p {
+        color: $white;
+        font-size: $font-size-medium;
+        padding: 1em;
+      }
 }
