@@ -6,23 +6,23 @@ class Header extends Component {
     return (
       <header className='container-fluid'>
         <div className='logo float-left'>
-          <a><img src='#' />LOGO</a>
+          <Link to='/'><img src='#' />LOGO</Link>
         </div>
 
         <nav className='float-right'>
           <ul>
             <li>
-              <Link to='/'>home</Link>
-              </li>
-            <li>
               <Link to='/About'>about</Link>
-              </li>
+            </li>
             <li>
-              <Link to='/Portfolio'>portfolio</Link>
-              </li>
+              <Link to='/Projects'>projects</Link>
+            </li>
             <li>
               <Link to='/Contact'>contact</Link>
-              </li>
+            </li>
+            <li>
+              <Link to='/Resume'>resume</Link>
+            </li>
           </ul>
         </nav>
       </header>

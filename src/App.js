@@ -10,8 +10,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
-import Portfolio from './components/Pages/Portfolio';
+import Projects from './components/Pages/Projects';
 import Contact from './components/Pages/Contact';
+import Resume from './components/Pages/Resume';
 
 
 // includes (css)
@@ -28,8 +29,9 @@ class App extends Component {
 
                 <Route exact path='/' component={Home} />
                 <Route exact path='/About' component={About} />
-                <Route exact path='/Portfolio' component={Portfolio} />
+                <Route exact path='/Projects' component={Projects} />
                 <Route exact path='/Contact' component={Contact} />
+                <Route exact path='/Resume' component={Resume} />
 
             </div>
           </Router>

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class Portfolio extends Component {
+class Projects extends Component {
   render() {
     return (
       <section>
-        <h1>Krittiya's portfolio</h1>
+        <h1>Krittiya's Projects</h1>
       </section>
     )
   }
 }
-export default Portfolio;
+export default Projects;
