@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Home extends Component {
   render() {
     return (
-      <main className="container-fluid text-center">
-        <div className="container hori-centered">
+      <main id='main' className="container-fluid text-center">
+        <div className="full-screen">
           <div className="row">
             <div className="col-sm">
               <div className="banner-text">
@@ -13,7 +13,7 @@ class Home extends Component {
 
                 <hr/>
 
-                <p>HTML/CSS | Bootstrap | SASS | JavaScript | React | React Native</p>
+                <p>HTML5/CSS3 | Bootstrap | SASS | JavaScript | React | React Native</p>
 
                   <div className="social-links">
 

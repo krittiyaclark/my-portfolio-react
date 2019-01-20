@@ -22,7 +22,6 @@ class App extends Component {
   render() {
     return (
       <div className='wrapper'>
-        <div className='full-screen'>
           <Router>
             <div>
               <Header />
@@ -36,8 +35,6 @@ class App extends Component {
             </div>
           </Router>
         </div>
-      </div>
-
     )
   }
 }

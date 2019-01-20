@@ -73,19 +73,14 @@ hr {
 }
 
 .full-screen {
-  background: #0F2027;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  /* Sizing */
+  width: 100vw;
   height: 100vh;
-  margin: 0;
 
-  position: relative;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hori-centered {
@@ -96,16 +91,7 @@ hr {
   transform: translate(-50%, -50%);
 }
 
-
-.banner-text-content {
-  opacity: .8;
-  width: 75%;
-  margin: auto;
-  border-radius: 10px;
-
-      p {
-        color: $white;
-        font-size: $font-size-medium;
-        padding: 1em;
-      }
+.content {
+  position: relative;
+  height: 150px;
 }
