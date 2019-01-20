@@ -3,43 +3,92 @@ import React, { Component } from 'react';
 class Projects extends Component {
   render() {
     return (
-      <section className='container-fluid text-center'>
-          <div className='container content'>
-            <div className='row'>
-              <div className='col-sm'>
-                  <p>Front-End Web Developer Projects</p>
-               </div>
-            </div>
-         </div>
-         <div className='container content'>
-           <div className='row'>
-             <div className='col-sm'>
-                 <p>Front-End Web Developer Projects</p>
-              </div>
-           </div>
-        </div>
-        <div className='container content'>
+      <div>
+        <section className='section text-center'>
           <div className='row'>
             <div className='col-sm'>
+              <div className='content-left'>
                 <p>Front-End Web Developer Projects</p>
-             </div>
-          </div>
-       </div>
-       <div className='container content'>
-         <div className='row'>
-           <div className='col-sm'>
-               <p>Front-End Web Developer Projects</p>
+              </div>
             </div>
-         </div>
+            <div className='col-sm-8'>
+              <div className='content-right'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='section text-center'>
+          <div className='row'>
+            <div className='col-sm'>
+              <div className='content-left'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+            <div className='col-sm-8'>
+              <div className='content-right'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='section text-center'>
+          <div className='row'>
+            <div className='col-sm'>
+              <div className='content-left'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+            <div className='col-sm-8'>
+              <div className='content-right'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='section text-center'>
+          <div className='row'>
+            <div className='col-sm'>
+              <div className='content-left'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+            <div className='col-sm-8'>
+              <div className='content-right'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='section text-center'>
+          <div className='row'>
+            <div className='col-sm'>
+              <div className='content-left'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+            <div className='col-sm-8'>
+              <div className='content-right'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='section text-center'>
+          <div className='row'>
+            <div className='col-sm'>
+              <div className='content-left'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+            <div className='col-sm-8'>
+              <div className='content-right'>
+                <p>Front-End Web Developer Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div className='container content'>
-        <div className='row'>
-          <div className='col-sm'>
-              <p>Front-End Web Developer Projects</p>
-           </div>
-        </div>
-     </div>
-      </section>
     )
   }
 }
