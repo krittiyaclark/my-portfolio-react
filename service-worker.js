@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/krittiyaclark/my-portfolio-react/precache-manifest.b5586de30ac0683129993b4dac70ff51.js"
+  "/my-portfolio-react/precache-manifest.42b5bf26fcae37ddf5dae3119e281cfc.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/krittiyaclark/my-portfolio-react/index.html", {
+workbox.routing.registerNavigationRoute("/my-portfolio-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
