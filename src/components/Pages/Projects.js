@@ -7,27 +7,20 @@ class Projects extends Component {
   state = {
     redirect: false
   }
-  setRedirect = () => {
-    this.setState({
-      redirect: true
-    })
-  }
-  renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to='{{this.state.project.href}}' />
-    }
+  setRedirect = (href) => {
+    window.location.href = href;
   }
 
   render() {
     return (
       <div>
-        {ProjectLists.map((project, i) =>
+        {ProjectLists.map((project) =>
 
         <section className='section'>
           <div className='row'>
             <div className='col-sm'>
               <div className='content-left'>
-                <p key={project.id + i}>
+                <p key={project.id}>
                   {project.iconImage}
                 </p>
               </div>
@@ -37,7 +30,7 @@ class Projects extends Component {
                 <h1>{project.name}</h1>
                 <p>{project.description}</p>
                 <p>Technologies: {project.technologies}</p>
-                <button onClick={this.setRedirect}>View live</button>
+                <button onClick={()=>this.setRedirect(project.href)}>View live</button>
               </div>
             </div>
           </div>
