@@ -59,10 +59,10 @@ nav {
 /* HOME PAGE CONETENT */
 
 #main {
-  background: #0F2027;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: $pink;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ nav {
 
   h1 {
     font-size: $font-size-large;
-    color: $white;
+    color: $darkGrey;
   }
 
     hr {
@@ -94,7 +94,7 @@ nav {
     }
 
       p {
-        color: $white;
+        color: $darkGrey;
         font-size: $font-size-nornal;
         padding: 1em;
       }
@@ -107,7 +107,7 @@ nav {
   margin: auto;
 
   i {
-    color: white;
+    color: $darkGrey;
     font-size: 5em;
     padding: 8px;
   }
@@ -124,11 +124,12 @@ nav {
   display: table;
   margin: 0;
   max-width: none;
-  background-color: #373B44;
+  background-color: $white;
+  color: $black;
   // height: 50vh;
 
     &:nth-child(even) {
-      background-color: #FE4B74;
+      background-color: $pink;
     }
 
       .content-left,

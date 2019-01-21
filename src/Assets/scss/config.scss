@@ -1,10 +1,12 @@
 /* Variables */
 
 $black: #010000;
-$white: #ffffff;
+$white: #ffff;
 $lightGrey: #e6e6e6;
 $darkGrey: #333333;
 $red: #ff1755;
+$pink: #f7bac9;
+$yellow: #f9f6bd;
 $font-family: 'Montserrat';
 $font-light-weight: 200;
 $font-size-nornal: 18px;
@@ -60,7 +62,7 @@ a {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #f05f40;
+  border-color: $yellow;
 }
 
 .container-fluid {

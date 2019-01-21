@@ -4,7 +4,7 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <section className='section text-center'>
+        <section className='section'>
           <div className='row'>
             <div className='col-sm'>
               <div className='content-left'>
@@ -12,8 +12,9 @@ class Projects extends Component {
               </div>
             </div>
             <div className='col-sm-8'>
-              <div className='content-right'>
-                <p>Front-End Web Developer Projects</p>
+              <div className='content-right text-left'>
+                <h1>Neighborhood Map</h1>
+                <p>This project creates the map of restaurants in New York City neighborhood for the Front End Web Developer Nanodegree for Udacity.</p>
               </div>
             </div>
           </div>
