@@ -2,7 +2,9 @@
   "name": "my-portfolio-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://krittiyaclark.github.io/my-portfolio-react/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
     "gulp-clean-css": "^4.0.0",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
