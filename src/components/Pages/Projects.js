@@ -1,94 +1,48 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+
+import ProjectLists from '../ProjectLists';
 
 class Projects extends Component {
+  state = {
+    redirect: false
+  }
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='{{this.state.project.href}}' />
+    }
+  }
+
   render() {
     return (
       <div>
+        {ProjectLists.map((project, i) =>
+
         <section className='section'>
           <div className='row'>
             <div className='col-sm'>
               <div className='content-left'>
-                <p>Front-End Web Developer Projects</p>
+                <p key={project.id + i}>
+                  {project.iconImage}
+                </p>
               </div>
             </div>
             <div className='col-sm-8'>
               <div className='content-right text-left'>
-                <h1>Neighborhood Map</h1>
-                <p>This project creates the map of restaurants in New York City neighborhood for the Front End Web Developer Nanodegree for Udacity.</p>
+                <h1>{project.name}</h1>
+                <p>{project.description}</p>
+                <p>Technologies: {project.technologies}</p>
+                <button onClick={this.setRedirect}>View live</button>
               </div>
             </div>
           </div>
         </section>
-        <section className='section text-center'>
-          <div className='row'>
-            <div className='col-sm'>
-              <div className='content-left'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-            <div className='col-sm-8'>
-              <div className='content-right'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className='section text-center'>
-          <div className='row'>
-            <div className='col-sm'>
-              <div className='content-left'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-            <div className='col-sm-8'>
-              <div className='content-right'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className='section text-center'>
-          <div className='row'>
-            <div className='col-sm'>
-              <div className='content-left'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-            <div className='col-sm-8'>
-              <div className='content-right'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className='section text-center'>
-          <div className='row'>
-            <div className='col-sm'>
-              <div className='content-left'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-            <div className='col-sm-8'>
-              <div className='content-right'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className='section text-center'>
-          <div className='row'>
-            <div className='col-sm'>
-              <div className='content-left'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-            <div className='col-sm-8'>
-              <div className='content-right'>
-                <p>Front-End Web Developer Projects</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        )}
       </div>
     )
   }
