@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Home extends Component {
   render() {
     return (
-      <main id='main' className="container-fluid text-center">
+      <main id='main' className="container-fluid text-center filter">
         <div className="full-screen">
           <div className="row">
             <div className="col-sm">

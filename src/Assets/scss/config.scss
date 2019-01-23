@@ -62,7 +62,7 @@ a {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: $yellow;
+  border-color: $pink;
 }
 
 .container-fluid {
@@ -91,4 +91,9 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.filter {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }

@@ -21,7 +21,7 @@ class Projects extends Component {
             <div className='col-sm'>
               <div className='content-left'>
                 <p key={project.id}>
-                  {project.iconImage}
+                  <img src={project.iconImage} className='project-icon'/>
                 </p>
               </div>
             </div>

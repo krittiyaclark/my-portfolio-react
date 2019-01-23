@@ -1,7 +1,7 @@
 const ProjectLists = [
     {
         id: "1",
-        iconImage: "image-01",
+        iconImage: "/img/moutain.jpg",
         name: "Neighborhood Map",
         description: "This project creates the map of restaurants in New York City neighborhood for the Front End Web Developer Nanodegree for Udacity.",
         technologies: "HTML, CSS, Resposive Website Design, Accessibility, Service Worker, React",
@@ -9,7 +9,7 @@ const ProjectLists = [
     },
     {
         id: "2",
-        iconImage: "",
+        iconImage: "/img/city.jpg",
         name: "Bookshelf",
         description: "This project creates a library of books for Front End Nanodegree for Udacity.",
         technologies: "HTML, CSS, Resposive Website Design, Accessibility, React",
