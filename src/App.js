@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className='wrapper'>
           <Router>
-            <div>
+            <div className='setHeight'>
               <Header />
 
                 <Route exact path='/' component={Home} />

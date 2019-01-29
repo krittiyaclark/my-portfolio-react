@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
-      <div>
         <nav className='navbar navbar-expand-sm navbar-default navbar-fixed-top navbar-dark bg-dark'>
           <Link to='/' className='navbar-brand'><img src='#' />LOGO</Link>
             <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation'>
@@ -27,7 +26,6 @@ class Header extends Component {
               </ul>
             </div>
           </nav>
-        </div>
     )
   }
 }

@@ -37,6 +37,7 @@ body {
 }
 
 html, body{
+  min-height: 100vh;
   height: 100%;
 }
 
@@ -96,4 +97,8 @@ hr {
 .filter {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+}
+
+.setHeight {
+  min-height: 100%;
 }

@@ -4,20 +4,21 @@
 /* HEADER */
 
 header {
-  display: block;
-  position: relative;
-  width: 100%;
-  background: $black;
-  color: $white;
-  height: 60px;
-  z-index: 2;
-
-  .logo {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    @include translateY(-50%);
-  }
+  // display: block;
+  // position: relative;
+  // width: 100%;
+  // background: $black;
+  // color: $white;
+  // height: 100%;
+  // background-size: cover;
+  // z-index: 2;
+  //
+  // .logo {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 15px;
+  //   @include translateY(-50%);
+  // }
 }
 
 /* HEADER NAVIGATION */
@@ -128,6 +129,28 @@ nav {
 
 /* ABOUT PAGE CONETENT */
 
+.about {
+  background-image: url('/img/programming.jpg');
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 20rem 0;
+  margin-bottom: 50px;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $white;
+  }
+  p {
+    margin: 0 auto 20px;
+  }
+}
 
 /* PORTFOLIO PAGE CONETENT */
 
