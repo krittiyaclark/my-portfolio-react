@@ -20,7 +20,7 @@ class Contact extends Component {
 
                   <div className='icon-list'>
                     <ul>
-                      <li><i className='fas fa-envelope'></i>solution.stack99@gmail.com</li>
+                      <a href='mailto:solution.stack99@gmail.com'><li><i className='fas fa-envelope'></i>solution.stack99@gmail.com</li></a>
                       <li><i className='fab fa-skype'></i>Skype</li>
                     </ul>
                   </div>
