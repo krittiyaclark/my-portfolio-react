@@ -1,25 +1,11 @@
 @import "config.scss";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
+/* FONT SIZES */
+
+
 /* HEADER */
 
-header {
-  // display: block;
-  // position: relative;
-  // width: 100%;
-  // background: $black;
-  // color: $white;
-  // height: 100%;
-  // background-size: cover;
-  // z-index: 2;
-  //
-  // .logo {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 15px;
-  //   @include translateY(-50%);
-  // }
-}
 
 /* HEADER NAVIGATION */
 
@@ -137,8 +123,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding: 20rem 0;
-  margin-bottom: 50px;
+  padding: 10rem 0;
 
   /* Flexbox stuff */
   display: flex;
@@ -150,6 +135,14 @@ nav {
   p {
     margin: 0 auto 20px;
   }
+}
+
+.about-content h1 {
+    margin: .67em 0;
+  }
+
+.about-content:nth-child(even) {
+  background-color: $pink;
 }
 
 /* PORTFOLIO PAGE CONETENT */
@@ -203,7 +196,7 @@ nav {
   justify-content: center;
   margin-bottom: 20px;
     h1, h2 {
-      padding: .5em;
+      padding: .5em 0;
   }
 }
 
@@ -227,6 +220,7 @@ nav {
   border: 5px solid $white;
   padding: 5px;
   border-radius: 50%;
+  margin: 0 0 59px 0;
 }
 
 /* MEDIA QUERY */

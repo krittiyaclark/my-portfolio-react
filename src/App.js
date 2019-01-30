@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className='wrapper'>
           <Router>
-            <div className='setHeight'>
+            <>
               <Header />
 
                 <Route exact path='/' component={Home} />
@@ -32,7 +32,7 @@ class App extends Component {
                 <Route exact path='/Contact' component={Contact} />
                 <Route exact path='/Resume' component={Resume} />
 
-            </div>
+            </>
           </Router>
         </div>
     )

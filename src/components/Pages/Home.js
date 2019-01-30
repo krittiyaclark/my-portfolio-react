@@ -17,19 +17,20 @@ class Home extends Component {
 
                   <div className="social-links">
 
-                    {/* LinkedIn */}
                     <a href="http://google.com" rel="noopener noreferrer" target="_blank">
                       <i className="fab fa-linkedin" aria-hidden="true" />
                     </a>
 
-                    {/* Github */}
                     <a href="http://google.com" rel="noopener noreferrer" target="_blank">
                       <i className="fab fa-github-alt" aria-hidden="true" />
                     </a>
 
-                    {/* Freecodecamp */}
+                    <a href='mailto:solution.stack99@gmail.com'>
+                      <i className='fas fa-envelope'></i>
+                    </a>
+                    
                     <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                      <i className="fab fa-free-code-camp" aria-hidden="true" />
+                      <i className='fab fa-skype'></i>
                     </a>
 
                   </div>

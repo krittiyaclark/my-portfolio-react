@@ -38,6 +38,14 @@ const ProjectLists = [
         description: "Simple is a corporate responsive template and the absolutely clean & modern template theme for your business. The theme was built by Foundation Framework and take advantages of it features: grid system, typography, buttons, form, UI element, section and more.",
         technologies: "HTML, CSS, JavaScript",
         href: "http://striped-dolls.surge.sh"
+    },
+    {
+        id: "6",
+        iconImage: "",
+        name: "Momentum clone",
+        description: "This web app is a clone of Momentum Dash, a popular Chrome extension that replaces the new tab page. This web app is a personal homepage, or dashboard, that will help you be more productive by providing a to-do list and a daily focus reminder. It also displays the time, weather, inspirational quotes, and random photos.",
+        technologies: "HTML, CSS, JavaScript",
+        href: "https://gamy-branch.surge.sh"
     }
 
 ]

@@ -29,7 +29,7 @@ class Projects extends Component {
               <div className='content-right text-left'>
                 <h1>{project.name}</h1>
                 <p>{project.description}</p>
-                <p><b>Technologies:</b> {project.technologies}</p>
+                <p><strong>Technologies:</strong> {project.technologies}</p>
                 <button onClick={()=>this.setRedirect(project.href)}>View live</button>
               </div>
             </div>
