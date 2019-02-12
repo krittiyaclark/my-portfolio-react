@@ -4,10 +4,10 @@ class About extends Component {
   render() {
     return (
         <div className='wrapper'>
-      <header className='about container-fluid text-center filter'>
+      <header className='about container-fluid text-center'>
           <div className='container'>
             <div className='row justify-content-center'>
-              <div className='col-sm-8 align-self-center'>
+              <div className='col-sm-12 align-self-center'>
                   <img src='img/KRITTIYA-CLARK.jpg' alt='Avatar' className='avatar'/>
                   <h1>My Passion and Personality</h1>
                </div>

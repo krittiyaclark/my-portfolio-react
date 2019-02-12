@@ -116,7 +116,7 @@ nav {
 /* ABOUT PAGE CONETENT */
 
 .about {
-  background-image: url('/img/programming.jpg');
+  background-image: url('/img/programming-backgound.jpg');
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -130,7 +130,8 @@ nav {
   justify-content: center;
   align-items: center;
   h1 {
-    color: $white;
+    color: $pink;
+    font-size: $font-size-extra-large;
   }
   p {
     margin: 0 auto 20px;
@@ -138,11 +139,11 @@ nav {
 }
 
 .about-content h1 {
-    margin: .67em 0;
-  }
+  margin: .67em 0;
+}
 
 .about-content:nth-child(even) {
-  background-color: $pink;
+  background-color: $lightPink;
 }
 
 /* PORTFOLIO PAGE CONETENT */
@@ -224,13 +225,6 @@ nav {
 }
 
 /* RESUME PAGE CONETENT */
-
-.Index-page-content {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 96px 60px;
-}
 
 .redirectLink {
   color: $pink !important;

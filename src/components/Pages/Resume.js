@@ -44,7 +44,7 @@ class Resume extends Component {
           </section>
 
           {/* Work Experience */}
-          <section className='container-fluid'>
+          <section className='container-fluid Top-padding'>
               <div className='container text-left'>
                 <div className='row'>
                   <div className='col-sm-4'>
@@ -90,7 +90,7 @@ class Resume extends Component {
           </section>
 
           {/* Education */}
-          <section className='container-fluid'>
+          <section className='container-fluid Top-padding'>
               <div className='container text-left'>
                 <div className='row'>
                   <div className='col-sm-4'>
@@ -112,7 +112,7 @@ class Resume extends Component {
           </section>
 
           {/* Projects */}
-          <section className='container-fluid'>
+          <section className='container-fluid Top-padding'>
               <div className='container text-left'>
                 <div className='row'>
                   <div className='col-sm-4'>
@@ -152,7 +152,7 @@ class Resume extends Component {
           </section>
 
           {/* Open Source Project */}
-          <section className='container-fluid'>
+          <section className='container-fluid Top-padding'>
               <div className='container text-left'>
                 <div className='row'>
                   <div className='col-sm-4'>
