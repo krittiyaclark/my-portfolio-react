@@ -7,7 +7,7 @@ class About extends Component {
       <header className='about container-fluid text-center filter'>
           <div className='container'>
             <div className='row justify-content-center'>
-              <div className='col-8 align-self-center'>
+              <div className='col-sm-8 align-self-center'>
                   <img src='img/KRITTIYA-CLARK.jpg' alt='Avatar' className='avatar'/>
                   <h1>My Passion and Personality</h1>
                </div>
@@ -18,7 +18,7 @@ class About extends Component {
       <section className='about-content page-content container-fluid text-center'>
           <div className='container'>
             <div className='row justify-content-center'>
-              <div className='col-8 align-self-center'>
+              <div className='col-sm-8 align-self-center'>
                   <h1>A few fun facts about myself</h1>
                   <p>I like organic coffee, I moved to New York City from Bangkok in 2006, I like snowboarding, my favourite city is Amasterdam, I run in summer only.</p>
                </div>

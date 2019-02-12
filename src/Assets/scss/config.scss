@@ -9,7 +9,7 @@ $pink: #f7bac9;
 $yellow: #f9f6bd;
 $font-family: 'Montserrat';
 $font-light-weight: 200;
-$font-size-nornal: 19px;
+$font-size-nornal: 14px;
 $font-size-medium: 30px;
 $font-size-large: 45px;
 
@@ -50,6 +50,15 @@ p {
   font-weight: $font-light-weight;
 }
 
+h3 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .1em;
+  line-height: 3.5em;
+  text-transform: uppercase;
+}
+
 p {
   font-size: $font-size-nornal;
   line-height: 42px;
@@ -66,10 +75,18 @@ a {
     }
 }
 
+b, strong {
+    font-weight: bold;
+}
+
 hr {
   max-width: 50px;
   border-width: 3px;
   border-color: $white;
+}
+
+ul li {
+  font-size: $font-size-nornal;
 }
 
 .container-fluid {

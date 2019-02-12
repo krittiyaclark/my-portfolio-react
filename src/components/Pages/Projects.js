@@ -18,7 +18,7 @@ class Projects extends Component {
 
         <section className='section'>
           <div className='row'>
-            <div className='col-sm'>
+            <div className='col-sm-4'>
               <div className='content-left'>
                 <p key={project.id}>
                   <img src={project.iconImage} className='project-icon'/>

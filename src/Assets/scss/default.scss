@@ -123,7 +123,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding: 10rem 0;
+  padding: 11rem 0;
 
   /* Flexbox stuff */
   display: flex;
@@ -223,6 +223,14 @@ nav {
   margin: 0 0 59px 0;
 }
 
+/* RESUME PAGE CONETENT */
+
+.Index-page-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 96px 60px;
+}
 /* MEDIA QUERY */
 
 @media (max-width: 575.98px) {
