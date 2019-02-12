@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import {
-  HashRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 class Resume extends Component {
   state = {
     redirect: false
   }
-  handleClick = (href) => {
+  setRedirect = (href) => {
     window.location.href = href;
   }
 
@@ -122,45 +118,53 @@ class Resume extends Component {
                   <h2>Projects</h2>
               </div>
               <div className='col-sm-8'>
-                <Router>
                   <ul>
                     <li>
                       <strong>Neighborhood Map</strong> HTML, CSS, React, Service Worker, Accessibility, Responsive design
                       <br />
-                      <Link to='https://krittiyaclark.github.io/udacity-front-end-neighborhood-map-react/' target='_blank'>Project link</Link>
+                      <a onClick={()=>this.setRedirect('https://krittiyaclark.github.io/udacity-front-end-neighborhood-map-react/')}>Project link</a>
+                    </li>
+                    <li>
+                      <strong>Bookshelf</strong> HTML, CSS, React
+                      <br />
+                      <a onClick={()=>this.setRedirect('https://krittiyaclark.github.io/udacity-front-end-React-MyReads-Project/#/')}>Project link</a>
+                    </li>
+                    <li>
+                      <strong>Memory Game</strong> HTML, CSS, Bootstrap, JavaScript, Responsive design
+                      <br />
+                      <a onClick={()=>this.setRedirect('http://threatening-mass.surge.sh/')}>Project link</a>
+                    </li>
+                    <li>
+                      <strong>Simple</strong> HTML, CSS, React, Service Worker, Accessibility, Responsive design
+                      <br />
+                      <a onClick={()=>this.setRedirect('http://striped-dolls.surge.sh/')}>Project link</a>
+                    </li>
+                    <li>
+                      <strong>Momentumdash</strong> HTML, CSS, JavaScript, JSON
+                      <br />
+                      <a onClick={()=>this.setRedirect('https://krittiyaclark.github.io/Momentumdash/')}>Project link</a>
                     </li>
                   </ul>
-                </Router>
               </div>
             </div>
          </div>
       </section>
 
-      {/* Technologies */}
+      {/* Open Source Project */}
       <section className='container-fluid Index-page-content'>
           <div className='container text-left'>
             <div className='row'>
               <div className='col-sm-4'>
-                  <h2>Technologies</h2>
+                  <h2>Open Source Project</h2>
               </div>
               <div className='col-sm-8'>
-                  <ul>
-                    <li>Sass / LESS</li>
-                    <li>HTML5 / CSS3</li>
-                    <li>JavaScript / jQuery</li>
-                    <li>React.js</li>
-                    <li>React Native</li>
-                    <li>CSS Flexbox</li>
-                    <li>Foundation / Bootstrap</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Velocity</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Responsive Layout and Design</li>
-                    <li>Cross-Browser Compatibility</li>
-                    <li>Mobile First Thinking</li>
-                  </ul>
+                  <p><strong>Organization</strong> <strong><i>Code for BTV</i></strong></p>
+                  <p><strong>Project detail</strong> <strong><i>The Money on My Mind app</i></strong> helps CVOEO's Reach-Up clients stay on track with their personal finance coaching</p>
+                  <p><strong>Technology</strong> <strong><i>React Native, Expo, Firebase, Redux</i></strong></p>
+                  <p><strong>GitHub repository</strong> <strong><i><a onClick={()=>this.setRedirect('https://github.com/codeforbtv/cvoeo-app')}>Repository link</a></i></strong></p>
+
+
+
               </div>
             </div>
          </div>
