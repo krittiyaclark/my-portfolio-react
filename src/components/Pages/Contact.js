@@ -24,27 +24,27 @@ class Contact extends Component {
                     <div className='App'>
                         <div>
                           <form action='/action_page.php'>
-                            <div className='form__row'>
-                              <label className='form__label'>First Name</label>
+                            <div className='form-row'>
+                              <label className='form-label'>First Name</label>
                               <input type='text'id='fname'name='firstname'placeholder='Your name..'/>
                             </div>
 
-                            <div className='form__row'>
-                              <label className='form__label'>Last Name</label>
+                            <div className='form-row'>
+                              <label className='form-label'>Last Name</label>
                               <input type='text' id='lname' name='lastname' placeholder='Your last name..'/>
                             </div>
 
-                            <div className='form__row'>
-                              <label className='form__label'>Email</label>
+                            <div className='form-row'>
+                              <label className='form-label'>Email</label>
                               <input type='email' id='email' name='email' placeholder='Your email'/>
                             </div>
 
-                            <div className='form__row'>
-                              <label className='form__label'>Message</label>
+                            <div className='form-row'>
+                              <label className='form-label'>Message</label>
                               <textarea id='subject' name='message' placeholder='Write something..'></textarea>
                             </div>
 
-                            <div className='form__row form__row--buttons'>
+                            <div className='form-row form-row-buttons'>
                               <input type='submit' value='Submit'/>
                             </div>
 

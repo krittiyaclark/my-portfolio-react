@@ -205,7 +205,7 @@ nav {
     width: 100%;
 }
 
-.form__row {
+.form-row {
     margin: 0 0 24px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -214,7 +214,7 @@ nav {
     display: -ms-flexbox;
     display: flex;
 
-    .form__label {
+    .form-label {
         -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
         -ms-flex-negative: 0;
@@ -224,7 +224,7 @@ nav {
 
 }
 
-.form__row--buttons {
+.form-row-buttons {
   padding-left: 25%;
 }
 
@@ -240,8 +240,9 @@ input[type=text],input[type=email], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    background: none;
+    border: 1px solid $pink !important;
+    color: $black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -249,7 +250,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    border: 2px solid $pink;
 }
 
 .icon-list {
@@ -296,14 +297,19 @@ input[type=submit]:hover {
     -webkit-transform: translate(none);
     transform: none;
   }
+
+  .form-row-buttons {
+    padding: 0;
+  }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 800px) {
   .contact-body {
     background: $lightPink;
     position: relative;
     height: 100%;
   }
+
   .hori-centered {
     position: relative;
     top: 0;
@@ -311,6 +317,38 @@ input[type=submit]:hover {
     -webkit-transform: translate(none);
     transform: none;
     display: inline-block;
+  }
+
+  .form-row .form-label {
+    display: none;
+  }
+
+  .form-row-buttons {
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-body {
+    background: $lightPink;
+    position: relative;
+    height: 100%;
+  }
+
+  .hori-centered {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(none);
+    transform: none;
+  }
+
+  .form-row .form-label {
+        display: none;
+    }
+
+    .form-row-buttons {
+      padding: 0;
   }
 }
 
