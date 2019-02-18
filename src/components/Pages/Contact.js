@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
+const API_PATH = 'http://localhost:1992/my-portfolio-react/api/contact/index.php';
 
 class Contact extends Component {
   constructor(props) {
@@ -15,8 +18,21 @@ class Contact extends Component {
 
 handleFormSubmit = e => {
   e.preventDefault();
-  console.log(this.state);
-}
+  axios({
+    method: 'post',
+    url: `${API_PATH}`,
+    headers: { 'content-type': 'application/json' },
+    data: this.state
+  })
+    .then(result => {
+      this.state({
+        mailSent: result.data.sent
+      })
+    })
+    .catch(error => this.SetState({ error: error.message }));
+  // console.log(this.state);
+};
+
   render() {
     return (
       <section className='container-fluid text-center contact-body'>
@@ -66,6 +82,11 @@ handleFormSubmit = e => {
                               />
                             </div>
 
+                            <div>
+                              {this.state.mailSent &&
+                                <div>Thank you for contcting us.</div>
+                              }
+                            </div>
                           </form>
                         </div>
                     </div>

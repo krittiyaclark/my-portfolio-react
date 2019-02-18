@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://krittiyaclark.github.io/my-portfolio-react/",
   "dependencies": {
+    "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
