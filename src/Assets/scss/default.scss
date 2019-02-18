@@ -182,7 +182,7 @@ nav {
 /* CONTACT PAGE CONETENT */
 
 .contact-body {
-  background: $pink;
+  background: $lightPink;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -199,6 +199,34 @@ nav {
     h1, h2 {
       padding: .5em 0;
   }
+}
+
+.App {
+    width: 100%;
+}
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
 .icon-list {
@@ -234,7 +262,7 @@ nav {
 
 @media (max-width: 575.98px) {
   .contact-body {
-    background: $pink;
+    background: $lightPink;
     position: relative;
     height: 100%;
   }
@@ -249,7 +277,7 @@ nav {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .contact-body {
-    background: $pink;
+    background: $lightPink;
     position: relative;
     height: 100%;
   }
@@ -265,7 +293,7 @@ nav {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .contact-body {
-    background: $pink;
+    background: $lightPink;
     position: relative;
     height: 100%;
   }
