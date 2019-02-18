@@ -13,6 +13,10 @@ class Contact extends Component {
     }
   }
 
+handleFormSubmit = e => {
+  e.preventDefault();
+  console.log(this.state);
+}
   render() {
     return (
       <section className='container-fluid text-center contact-body'>
@@ -26,26 +30,40 @@ class Contact extends Component {
                           <form action='/action_page.php'>
                             <div className='form-row'>
                               <label className='form-label'>First Name</label>
-                              <input type='text'id='fname'name='firstname'placeholder='Your name..'/>
+                              <input type='text' id='fname'name='firstname' placeholder='Your name..'
+                                value={this.state.fname}
+                                onChange={ e => this.setState({ fname: e.target.value })}
+                              />
                             </div>
 
                             <div className='form-row'>
                               <label className='form-label'>Last Name</label>
-                              <input type='text' id='lname' name='lastname' placeholder='Your last name..'/>
+                              <input type='text' id='lname' name='lastname' placeholder='Your last name..'
+                                value={this.state.lname}
+                                onChange={ e => this.setState({ lname: e.target.value })}
+                              />
                             </div>
 
                             <div className='form-row'>
                               <label className='form-label'>Email</label>
-                              <input type='email' id='email' name='email' placeholder='Your email'/>
+                              <input type='email' id='email' name='email' placeholder='Your email'
+                                value={this.state.email}
+                                onChange={ e => this.setState({ email: e.target.value })}
+                              />
                             </div>
 
                             <div className='form-row'>
                               <label className='form-label'>Message</label>
-                              <textarea id='subject' name='message' placeholder='Write something..'></textarea>
+                              <textarea id='subject' name='message' placeholder='Write something..'
+                                value={this.state.message}
+                                onChange={ e => this.setState({ message: e.target.value })}
+                              ></textarea>
                             </div>
 
                             <div className='form-row form-row-buttons'>
-                              <input type='submit' value='Submit'/>
+                              <input type='submit' value='Submit'
+                                onClick={ e => this.handleFormSubmit(e) } value="Submit"
+                              />
                             </div>
 
                           </form>
