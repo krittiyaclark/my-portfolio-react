@@ -205,6 +205,29 @@ nav {
     width: 100%;
 }
 
+.form__row {
+    margin: 0 0 24px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .form__label {
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        font-size: 20px;
+    }
+
+}
+
+.form__row--buttons {
+  padding-left: 25%;
+}
+
 input[type=text],input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
