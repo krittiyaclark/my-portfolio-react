@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const API_PATH = 'https://obscure-inlet-85401.herokuapp.com/#/my-portfolio-react/api/contact/index.php';
+const API_PATH = 'https://solution-stack.herokuapp.com/my-portfolio-react/api/contact/index.php';
 
 class Contact extends Component {
   constructor(props) {
