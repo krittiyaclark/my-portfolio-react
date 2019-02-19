@@ -8,7 +8,7 @@ class About extends Component {
           <div className='container'>
             <div className='row justify-content-center'>
               <div className='col-sm-12 align-self-center'>
-                  <img src='img/KRITTIYA-CLARK.jpg' alt='Avatar' className='avatar'/>
+                  <img src='/img/KRITTIYA-CLARK.jpg' alt='Avatar' className='avatar'/>
                   <h1>My Passion and Personality</h1>
                </div>
             </div>

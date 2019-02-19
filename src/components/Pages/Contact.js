@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const API_PATH = 'https://solution-stack.herokuapp.com/api/contact/index.php';
+const API_PATH = 'http://localhost:3000/#/my-portfolio-react/api/contact/index.php';
 
 class Contact extends Component {
   constructor(props) {
@@ -25,12 +25,12 @@ handleFormSubmit = e => {
     data: this.state
   })
     .then(result => {
-      this.state({
+      this.setState({
         mailSent: result.data.sent
       })
+      console.log(this.state);
     })
     .catch(error => this.setState({ error: error.message }));
-  // console.log(this.state);
 };
 
   render() {
