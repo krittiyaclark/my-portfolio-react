@@ -29,7 +29,7 @@ handleFormSubmit = e => {
         mailSent: result.data.sent
       })
     })
-    .catch(error => this.SetState({ error: error.message }));
+    .catch(error => this.setState({ error: error.message }));
   // console.log(this.state);
 };
 
