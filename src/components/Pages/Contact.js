@@ -1,37 +1,35 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const API_PATH = 'https://solution-stack.herokuapp.com/my-portfolio-react/api/contact/index.php';
-
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fname: '',
-      lname: '',
-      email: '',
-      message: '',
-      mailSent: false,
-      error: null
-    }
-  }
 
-handleFormSubmit = e => {
-  e.preventDefault();
-  axios({
-    method: 'post',
-    url: `${API_PATH}`,
-    headers: { 'content-type': 'application/json' },
-    data: this.state
-  })
-    .then(result => {
-      this.setState({
-        mailSent: result.data.sent
-      })
-      console.log(this.state);
-    })
-    .catch(error => this.setState({ error: error.message }));
-};
+  handleSubmit(e){
+          e.preventDefault();
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+          axios({
+              method: "POST",
+              url:"http://localhost:3000/send",
+              data: {
+                  name: name,
+                  email: email,
+                  messsage: message
+              }
+          }).then((response)=>{
+              if (response.data.msg === 'success'){
+                  alert("Message Sent.");
+                  this.resetForm()
+              }else if(response.data.msg === 'fail'){
+                  alert("Message failed to send.")
+              }
+          })
+      }
+
+      resetForm(){
+          document.getElementById('contact-form').reset();
+      }
+
 
   render() {
     return (
@@ -43,51 +41,22 @@ handleFormSubmit = e => {
 
                     <div className='App'>
                         <div>
-                          <form action='/action_page.php'>
-                            <div className='form-row'>
-                              <label className='form-label'>First Name</label>
-                              <input type='text' id='fname'name='firstname' placeholder='Your name..'
-                                value={this.state.fname}
-                                onChange={ e => this.setState({ fname: e.target.value })}
-                              />
-                            </div>
-
-                            <div className='form-row'>
-                              <label className='form-label'>Last Name</label>
-                              <input type='text' id='lname' name='lastname' placeholder='Your last name..'
-                                value={this.state.lname}
-                                onChange={ e => this.setState({ lname: e.target.value })}
-                              />
-                            </div>
-
-                            <div className='form-row'>
-                              <label className='form-label'>Email</label>
-                              <input type='email' id='email' name='email' placeholder='Your email'
-                                value={this.state.email}
-                                onChange={ e => this.setState({ email: e.target.value })}
-                              />
-                            </div>
-
-                            <div className='form-row'>
-                              <label className='form-label'>Message</label>
-                              <textarea id='subject' name='message' placeholder='Write something..'
-                                value={this.state.message}
-                                onChange={ e => this.setState({ message: e.target.value })}
-                              ></textarea>
-                            </div>
-
-                            <div className='form-row form-row-buttons'>
-                              <input type='submit' value='Submit'
-                                onClick={ e => this.handleFormSubmit(e) } value="Submit"
-                              />
-                            </div>
-
-                            <div>
-                              {this.state.mailSent &&
-                                <div>Thank you for contcting us.</div>
-                              }
-                            </div>
+                          <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                              <div className="form-group">
+                                  <label htmlFor="name">Name</label>
+                                  <input type="text" className="form-control" id="name" />
+                              </div>
+                              <div className="form-group">
+                                  <label htmlFor="exampleInputEmail1">Email address</label>
+                                  <input type="email" className="form-control" id="email" aria-describedby="emailHelp" />
+                              </div>
+                              <div className="form-group">
+                                  <label htmlFor="message">Message</label>
+                                  <textarea className="form-control" rows="5" id="message"></textarea>
+                              </div>
+                              <button type="submit" className="btn btn-primary">Submit</button>
                           </form>
+
                         </div>
                     </div>
               </div>
