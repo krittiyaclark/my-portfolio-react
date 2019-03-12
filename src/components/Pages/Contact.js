@@ -1,35 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 class Contact extends Component {
-
-  handleSubmit(e){
-          e.preventDefault();
-          const name = document.getElementById('name').value;
-          const email = document.getElementById('email').value;
-          const message = document.getElementById('message').value;
-          axios({
-              method: "POST",
-              url:"http://localhost:3000/send",
-              data: {
-                  name: name,
-                  email: email,
-                  messsage: message
-              }
-          }).then((response)=>{
-              if (response.data.msg === 'success'){
-                  alert("Message Sent.");
-                  this.resetForm()
-              }else if(response.data.msg === 'fail'){
-                  alert("Message failed to send.")
-              }
-          })
-      }
-
-      resetForm(){
-          document.getElementById('contact-form').reset();
-      }
-
 
   render() {
     return (
@@ -41,12 +12,12 @@ class Contact extends Component {
 
                     <div className='App'>
                         <div>
-                          <form action="https://formspree.io/krittiyaclark@gmail.com" method="POST">
-                            <input type="text" name="name" placeholder="Name" required></input>
-                            <input type="email" name="_replyto" placeholder="Email" required></input>
-                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Telephone number" required></input>
-                            <textarea name="message" placeholder="Message" required></textarea>
-                            <input type="submit" value="Send" id="button-submit" required></input>
+                          <form action='https://formspree.io/krittiyaclark@gmail.com' method='POST'>
+                            <input type='text' name='name' placeholder='Name' required></input>
+                            <input type='email' name='_replyto' placeholder='Email' required></input>
+                            <input type='tel' id='phone' name='phone' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' placeholder='Telephone number' required></input>
+                            <textarea name='message' placeholder='Message' required></textarea>
+                            <input type='submit' value='Send' id='button-submit' required></input>
                           </form>
                         </div>
                     </div>
