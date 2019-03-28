@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 
 class Resume extends Component {
   state = {
@@ -13,14 +13,14 @@ class Resume extends Component {
     return (
       <>
       {/* Technologies */}
-      <div className='Index-page-content'>
-          <section className='container-fluid'>
-              <div className='container text-left'>
-                <div className='row'>
-                  <div className='col-sm-4'>
+      <div className="Index-page-content">
+          <section className="container-fluid">
+              <div className="container text-left">
+                <div className="row">
+                  <div className="col-sm-4">
                       <h2>Technologies</h2>
                   </div>
-                  <div className='col-sm-8'>
+                  <div className="col-sm-8">
                       <ul>
                         <li>Sass / LESS</li>
                         <li>HTML5 / CSS3</li>
@@ -44,13 +44,13 @@ class Resume extends Component {
           </section>
 
           {/* Work Experience */}
-          <section className='container-fluid Top-padding'>
-              <div className='container text-left'>
-                <div className='row'>
-                  <div className='col-sm-4'>
+          <section className="container-fluid Top-padding">
+              <div className="container text-left">
+                <div className="row">
+                  <div className="col-sm-4">
                       <h2>Work Experience</h2>
                   </div>
-                  <div className='col-sm-8'>
+                  <div className="col-sm-8">
                       <h3>Web Developer, Contract</h3>
                       <p><strong>Dealer.com/Cox Automotive Group</strong>, August 2018 – December 2018</p>
                       <ul>
@@ -90,13 +90,13 @@ class Resume extends Component {
           </section>
 
           {/* Education */}
-          <section className='container-fluid Top-padding'>
-              <div className='container text-left'>
-                <div className='row'>
-                  <div className='col-sm-4'>
+          <section className="container-fluid Top-padding">
+              <div className="container text-left">
+                <div className="row">
+                  <div className="col-sm-4">
                       <h2>Education</h2>
                   </div>
-                  <div className='col-sm-8'>
+                  <div className="col-sm-8">
                       <h3>Front-End Web Developer Nanodegree Program, Certification</h3>
                       <p><strong>Udacity</strong>, January 2018 – October 2018</p>
                       <p>I was awarded a GrowWithGoogle scholarship for Phase 1. The program included HTML, CSS, and JavaScript fundamental. After I finished the Phase 1, I was the top 10% of students who were awarded Phase 2 scholarships.</p>
@@ -112,38 +112,38 @@ class Resume extends Component {
           </section>
 
           {/* Projects */}
-          <section className='container-fluid Top-padding'>
-              <div className='container text-left'>
-                <div className='row'>
-                  <div className='col-sm-4'>
+          <section className="container-fluid Top-padding">
+              <div className="container text-left">
+                <div className="row">
+                  <div className="col-sm-4">
                       <h2>Projects</h2>
                   </div>
-                  <div className='col-sm-8'>
+                  <div className="col-sm-8">
                       <ul>
                         <li>
                           <strong>Neighborhood Map</strong> HTML, CSS, React, Service Worker, Accessibility, Responsive design
                           <br />
-                          <a className='redirectLink' onClick={()=>this.setRedirect('https://krittiyaclark.github.io/udacity-front-end-neighborhood-map-react/')}>Project link</a>
+                          <a className="redirectLink" onClick={()=>this.setRedirect("https://krittiyaclark.github.io/udacity-front-end-neighborhood-map-react/")}>Project link</a>
                         </li>
                         <li>
                           <strong>Bookshelf</strong> HTML, CSS, React
                           <br />
-                          <a className='redirectLink' onClick={()=>this.setRedirect('https://krittiyaclark.github.io/udacity-front-end-React-MyReads-Project/#/')}>Project link</a>
+                          <a className="redirectLink" onClick={()=>this.setRedirect("https://krittiyaclark.github.io/udacity-front-end-React-MyReads-Project/#/")}>Project link</a>
                         </li>
                         <li>
                           <strong>Memory Game</strong> HTML, CSS, Bootstrap, JavaScript, Responsive design
                           <br />
-                          <a className='redirectLink' onClick={()=>this.setRedirect('http://threatening-mass.surge.sh/')}>Project link</a>
+                          <a className="redirectLink" onClick={()=>this.setRedirect("http://threatening-mass.surge.sh/")}>Project link</a>
                         </li>
                         <li>
                           <strong>Simple</strong> HTML, CSS, React, Service Worker, Accessibility, Responsive design
                           <br />
-                          <a className='redirectLink' onClick={()=>this.setRedirect('http://striped-dolls.surge.sh/')}>Project link</a>
+                          <a className="redirectLink" onClick={()=>this.setRedirect("http://striped-dolls.surge.sh/")}>Project link</a>
                         </li>
                         <li>
                           <strong>Momentumdash</strong> HTML, CSS, JavaScript, JSON
                           <br />
-                          <a className='redirectLink' onClick={()=>this.setRedirect('https://krittiyaclark.github.io/Momentumdash/')}>Project link</a>
+                          <a className="redirectLink" onClick={()=>this.setRedirect("https://krittiyaclark.github.io/Momentumdash/")}>Project link</a>
                         </li>
                       </ul>
                   </div>
@@ -152,17 +152,17 @@ class Resume extends Component {
           </section>
 
           {/* Open Source Project */}
-          <section className='container-fluid Top-padding'>
-              <div className='container text-left'>
-                <div className='row'>
-                  <div className='col-sm-4'>
+          <section className="container-fluid Top-padding">
+              <div className="container text-left">
+                <div className="row">
+                  <div className="col-sm-4">
                       <h2>Open Source Project</h2>
                   </div>
-                  <div className='col-sm-8'>
+                  <div className="col-sm-8">
                       <p><strong>Organization</strong> <strong><i>Code for BTV</i></strong></p>
                       <p><strong>Project detail</strong> <strong><i>The Money on My Mind app</i></strong> helps CVOEO's Reach-Up clients stay on track with their personal finance coaching</p>
                       <p><strong>Technology</strong> <i>React Native, Expo, Firebase, Redux</i></p>
-                      <p><strong>GitHub repository</strong> <a className='redirectLink' onClick={()=>this.setRedirect('https://github.com/codeforbtv/cvoeo-app')}>Repository link</a></p>
+                      <p><strong>GitHub repository</strong> <a className="redirectLink" onClick={()=>this.setRedirect("https://github.com/codeforbtv/cvoeo-app")}>Repository link</a></p>
                   </div>
                 </div>
              </div>

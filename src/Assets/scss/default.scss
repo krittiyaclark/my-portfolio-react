@@ -1,5 +1,6 @@
 @import "config.scss";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 /* FONT SIZES */
 
@@ -35,7 +36,7 @@ nav {
     }
 
     a {
-      font-size: 19px;
+      @include font-size(19px);
       line-height: normal;
       color: $white;
 
@@ -58,6 +59,9 @@ nav {
 
 #main {
   background-image: url('/img/moutain.jpg');
+  // It work for GH Page
+  // background-image: url('/my-portfolio-react/img/moutain.jpg');
+
   // background: $pink;  /* fallback for old browsers */
   // background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -79,23 +83,33 @@ nav {
 }
 
 .banner-text {
-  opacity: .8;
+  @include opacity(.8);
   margin: auto;
   border-radius: 10px;
   text-align: center;
 
   h1 {
-    font-size: $font-size-large;
+    @include font-size(54px);
     color: $white;
+    text-transform: uppercase;
   }
 
     hr {
         margin: auto;
     }
 
+      p.text-normal {
+        color: $white;
+        @include font-size(14px);
+        font-family: $font-family-Montserrat;
+        font-style: italic;
+        padding: 1em;
+      }
+
       p {
         color: $white;
-        font-size: $font-size-nornal;
+        @include font-size(19px);
+        font-family: $font-family-Montserrat;
         padding: 1em;
       }
 }
@@ -108,8 +122,13 @@ nav {
 
   i {
     color: $white;
-    font-size: 5em;
+    @include font-size(50px);
     padding: 8px;
+
+      &:hover {
+        @include transition(.5s ease-in-out);
+        @include opacity(.8);
+      }
   }
 }
 
@@ -131,7 +150,7 @@ nav {
   align-items: center;
   h1 {
     color: $pink;
-    font-size: $font-size-extra-large;
+    @include font-size(52px)
   }
   p {
     margin: 0 auto 20px;
@@ -190,33 +209,27 @@ nav {
   height: 100vh;
   margin: 0;
   position: fixed;
+
+    .contact-grid {
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 20px;
+
+        h1,
+        h2 {
+          padding: .5em 0;
+      }
+
+        .flex-left {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          justify-content: baseline;
+        }
+    }
 }
 
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 20px;
-    h1, h2 {
-      padding: .5em 0;
-  }
-}
-
-#button-submit {
-  padding-left: 25%;
-}
-
-input[type=text],input[type=email],input[type="tel"], select, textarea {
-    width: 75%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
+button {
     background: none;
     border: 1px solid $pink !important;
     color: $black;
@@ -231,8 +244,29 @@ input[type=submit]:hover {
     background-color: 2px solid $pink;
 }
 
+#button-submit {
+  padding: 9px;
+  min-width: 150px;
+  text-transform: uppercase;
+}
+
+input[type=text],
+input[type=email],
+input[type="tel"],
+select,
+textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
 .icon-list {
-  font-size: 16px;
+  @include font-size(16px);
   text-align: left;
   a {
     color: $black;
@@ -240,7 +274,7 @@ input[type=submit]:hover {
     ul li {
     list-style: none;
     i {
-      font-size: 5em;
+      @include font-size(14px);
       padding: 8px;
     }
   }
@@ -336,6 +370,7 @@ input[type=submit]:hover {
     position: fixed;
     height: 100%;
   }
+  
   .hori-centered {
     position: relative;
     top: 0;
