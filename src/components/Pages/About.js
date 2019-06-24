@@ -20,7 +20,7 @@ class About extends Component {
             <div className="row justify-content-center">
               <div className="col-sm-8 align-self-center">
                   <h1>A few fun facts about myself</h1>
-                  <p>I like organic coffee, I moved to New York City from Bangkok in 2006, I like snowboarding, my favourite city is Amasterdam, I run in summer only.</p>
+                  <p>I like organic coffee, I moved to New York City from Bangkok in 2006, I like snowboarding and running, my favourite city is Amasterdam.</p>
                </div>
             </div>
          </div>
@@ -31,7 +31,7 @@ class About extends Component {
             <div className="row justify-content-center">
               <div className="col-10 align-self-center">
                   <h1>How do I became a Front-End developer</h1>
-                  <p>I had been curious how to built the website and I was fascinated with interactive. That made me learnt how to built a website.</p>
+                  <p>I had been curious how to built the website and I was fascinated by interactive on the websites. That made me learnt how to built a website.</p>
                   <p>I taught myself HTML/CSS and I got hooked and I never stop since then.</p>
 
                </div>

@@ -29,6 +29,9 @@ class Resume extends Component {
                         <li>React Native</li>
                         <li>CSS Flexbox</li>
                         <li>Foundation / Bootstrap</li>
+                        <li>CMS</li>
+                        <li>WordPress</li>
+                        <li>Google App Script</li>
                         <li>Git</li>
                         <li>GitHub</li>
                         <li>Velocity</li>
@@ -51,6 +54,16 @@ class Resume extends Component {
                       <h2>Work Experience</h2>
                   </div>
                   <div className="col-sm-8">
+                    <h3>Web Developer, Contract</h3>
+                    <p><strong>Vermont Digger</strong>, February 2019 – Present</p>
+                    <ul>
+                      <li>Troubleshoot, resolve, build applications, manipulate and implementation WordPress Web Platform</li>
+                      <li>Write Google app scripts to manipulate Mailchimp API</li>
+                      <li>Tools used include Atom, Coda, Trello and Google Docs</li>
+                      <li>Languages: HTML, CSS, Bootstrap, jQuery, JavaScript, Google App Script</li>
+                      <li>Collaborate remotely with another peer via Slack</li>
+                    </ul>
+
                       <h3>Web Developer, Contract</h3>
                       <p><strong>Dealer.com/Cox Automotive Group</strong>, August 2018 – December 2018</p>
                       <ul>
