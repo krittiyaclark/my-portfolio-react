@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter,
   Route,
   Link
 } from 'react-router-dom';
@@ -22,18 +22,18 @@ class App extends Component {
   render() {
     return (
       <div className='wrapper'>
-          <Router>
+          <BrowserRouter>
             <>
               <Header />
 
                 <Route exact path='/' component={Home} />
-                <Route exact path='/About' component={About} />
-                <Route exact path='/Projects' component={Projects} />
-                <Route exact path='/Contact' component={Contact} />
-                <Route exact path='/Resume' component={Resume} />
+                <Route path='/About' component={About} />
+                <Route path='/Projects' component={Projects} />
+                <Route path='/Contact' component={Contact} />
+                <Route path='/Resume' component={Resume} />
 
             </>
-          </Router>
+          </BrowserRouter>
         </div>
     )
   }
