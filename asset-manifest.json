@@ -1,13 +1,13 @@
 {
-  "main.css": "/krittiyaclark/krittiyaclark-portfolio-react/static/css/main.6b3c0ccc.chunk.css",
-  "main.js": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/main.7e75b7ef.chunk.js",
-  "main.js.map": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/main.7e75b7ef.chunk.js.map",
-  "static/js/1.d545835c.chunk.js": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/1.d545835c.chunk.js",
-  "static/js/1.d545835c.chunk.js.map": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/1.d545835c.chunk.js.map",
-  "runtime~main.js": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/runtime~main.a96801ad.js",
-  "runtime~main.js.map": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/runtime~main.a96801ad.js.map",
-  "static/css/main.6b3c0ccc.chunk.css.map": "/krittiyaclark/krittiyaclark-portfolio-react/static/css/main.6b3c0ccc.chunk.css.map",
-  "index.html": "/krittiyaclark/krittiyaclark-portfolio-react/index.html",
-  "precache-manifest.a643a288496d42eb0561888dbd35d812.js": "/krittiyaclark/krittiyaclark-portfolio-react/precache-manifest.a643a288496d42eb0561888dbd35d812.js",
-  "service-worker.js": "/krittiyaclark/krittiyaclark-portfolio-react/service-worker.js"
+  "main.css": "/krittiyaclark-portfolio-react/static/css/main.6b3c0ccc.chunk.css",
+  "main.js": "/krittiyaclark-portfolio-react/static/js/main.50db5faa.chunk.js",
+  "main.js.map": "/krittiyaclark-portfolio-react/static/js/main.50db5faa.chunk.js.map",
+  "static/js/1.d545835c.chunk.js": "/krittiyaclark-portfolio-react/static/js/1.d545835c.chunk.js",
+  "static/js/1.d545835c.chunk.js.map": "/krittiyaclark-portfolio-react/static/js/1.d545835c.chunk.js.map",
+  "runtime~main.js": "/krittiyaclark-portfolio-react/static/js/runtime~main.2007330f.js",
+  "runtime~main.js.map": "/krittiyaclark-portfolio-react/static/js/runtime~main.2007330f.js.map",
+  "static/css/main.6b3c0ccc.chunk.css.map": "/krittiyaclark-portfolio-react/static/css/main.6b3c0ccc.chunk.css.map",
+  "index.html": "/krittiyaclark-portfolio-react/index.html",
+  "precache-manifest.e3b124b3fccfc5556bbe436b42fb9567.js": "/krittiyaclark-portfolio-react/precache-manifest.e3b124b3fccfc5556bbe436b42fb9567.js",
+  "service-worker.js": "/krittiyaclark-portfolio-react/service-worker.js"
 }
