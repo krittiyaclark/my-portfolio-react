@@ -1,13 +1,13 @@
 {
-  "main.css": "/krittiyaclark/my-portfolio-react/static/css/main.985d17af.chunk.css",
-  "main.js": "/krittiyaclark/my-portfolio-react/static/js/main.42e36aaa.chunk.js",
-  "main.js.map": "/krittiyaclark/my-portfolio-react/static/js/main.42e36aaa.chunk.js.map",
-  "static/js/1.d545835c.chunk.js": "/krittiyaclark/my-portfolio-react/static/js/1.d545835c.chunk.js",
-  "static/js/1.d545835c.chunk.js.map": "/krittiyaclark/my-portfolio-react/static/js/1.d545835c.chunk.js.map",
-  "runtime~main.js": "/krittiyaclark/my-portfolio-react/static/js/runtime~main.2753615a.js",
-  "runtime~main.js.map": "/krittiyaclark/my-portfolio-react/static/js/runtime~main.2753615a.js.map",
-  "static/css/main.985d17af.chunk.css.map": "/krittiyaclark/my-portfolio-react/static/css/main.985d17af.chunk.css.map",
-  "index.html": "/krittiyaclark/my-portfolio-react/index.html",
-  "precache-manifest.c576abd3826568dd847b22bfe98c131d.js": "/krittiyaclark/my-portfolio-react/precache-manifest.c576abd3826568dd847b22bfe98c131d.js",
-  "service-worker.js": "/krittiyaclark/my-portfolio-react/service-worker.js"
+  "main.css": "/my-portfolio-react/static/css/main.6b3c0ccc.chunk.css",
+  "main.js": "/my-portfolio-react/static/js/main.762daabe.chunk.js",
+  "main.js.map": "/my-portfolio-react/static/js/main.762daabe.chunk.js.map",
+  "static/js/1.d545835c.chunk.js": "/my-portfolio-react/static/js/1.d545835c.chunk.js",
+  "static/js/1.d545835c.chunk.js.map": "/my-portfolio-react/static/js/1.d545835c.chunk.js.map",
+  "runtime~main.js": "/my-portfolio-react/static/js/runtime~main.e79c74ac.js",
+  "runtime~main.js.map": "/my-portfolio-react/static/js/runtime~main.e79c74ac.js.map",
+  "static/css/main.6b3c0ccc.chunk.css.map": "/my-portfolio-react/static/css/main.6b3c0ccc.chunk.css.map",
+  "index.html": "/my-portfolio-react/index.html",
+  "precache-manifest.166d299b38132f16dbe6ae948111d0a1.js": "/my-portfolio-react/precache-manifest.166d299b38132f16dbe6ae948111d0a1.js",
+  "service-worker.js": "/my-portfolio-react/service-worker.js"
 }
