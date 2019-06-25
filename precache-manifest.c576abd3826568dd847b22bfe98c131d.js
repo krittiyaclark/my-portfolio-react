@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "dc5375601a1742982745",
-    "url": "/krittiyaclark/my-portfolio-react/static/css/main.6b3c0ccc.chunk.css"
+    "revision": "42e36aaacd86b310b969",
+    "url": "/krittiyaclark/my-portfolio-react/static/css/main.985d17af.chunk.css"
   },
   {
-    "revision": "dc5375601a1742982745",
-    "url": "/krittiyaclark/my-portfolio-react/static/js/main.dc537560.chunk.js"
+    "revision": "42e36aaacd86b310b969",
+    "url": "/krittiyaclark/my-portfolio-react/static/js/main.42e36aaa.chunk.js"
   },
   {
     "revision": "d545835c93e7720e99fb",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/krittiyaclark/my-portfolio-react/static/js/runtime~main.2753615a.js"
   },
   {
-    "revision": "846948ada65d4f47c55e1a683f5fc815",
+    "revision": "ff33413a83fac3c5e787d8e469f6686d",
     "url": "/krittiyaclark/my-portfolio-react/index.html"
   }
 ];
