@@ -2,7 +2,7 @@
   "name": "my-portfolio-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://krittiyaclark.github.io/krittiyaclark-portfolio-react/",
+  "homepage": "https://krittiyaclark.github.io/my-portfolio-react/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
