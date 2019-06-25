@@ -41,7 +41,7 @@ const ProjectLists = [
     },
     {
         id: "6",
-        iconImage: "img/momentum.jpg",
+        iconImage: "img/momentum.png",
         name: "Momentum clone",
         description: "This web app is a clone of Momentum Dash, a popular Chrome extension that replaces the new tab page. This web app is a personal homepage, or dashboard, that will help you be more productive by providing a to-do list and a daily focus reminder. It also displays the time, weather, inspirational quotes, and random photos.",
         technologies: "HTML, CSS, JavaScript",

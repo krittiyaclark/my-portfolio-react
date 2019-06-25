@@ -81,11 +81,10 @@ class About extends Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-10 align-self-center">
-                  <h1>What do I see myself in next 5 years</h1>
+                  <h1>Objective</h1>
 
-                  <p>My passion as a Front-End developer which motivated me built my website with React and led me to be a better React developer. I also want to build more IOS applications with React Native (I talked about my contribution with an open source section)</p>
+                  <p>Front-End Web Developer with 4 years of design experience. Self-starter, highly motivated and passionate about creating customized responsive website design. I enjoy collaboration, curious and interested in learning, brings strong communication and teamwork skills, and helps others grow by sharing my expertise and encouraging best practices.</p>
 
-                  <p>I am looking to work with start ups to help with their business to reach the goal.</p>
                </div>
             </div>
          </div>

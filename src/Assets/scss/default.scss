@@ -60,7 +60,7 @@ nav {
 #main {
   // background-image: url('/img/moutain.jpg');
   // It work for GH Page
-  background-image: url('/my-portfolio-react/img/moutain.jpg');
+  background-image: url('/img/moutain.jpg');
 
   // background: $pink;  /* fallback for old browsers */
   // background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -100,7 +100,7 @@ nav {
 
       p.text-normal {
         color: $white;
-        @include font-size(14px);
+        @include font-size(23px);
         font-family: $font-family-Montserrat;
         font-style: italic;
         padding: 1em;
@@ -135,7 +135,7 @@ nav {
 /* ABOUT PAGE CONETENT */
 
 .about {
-  background-image: url('/my-portfolio-react/img/programming-backgound.jpg');
+  background-image: url('/img/programming-backgound.jpg');
 
   /* Center and scale the image nicely */
   background-position: center;
