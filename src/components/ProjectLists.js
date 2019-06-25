@@ -55,6 +55,14 @@ const ProjectLists = [
         technologies: "HTML, CSS, React, SASS and Bootstrap",
         href: "http://striped-dolls.surge.sh"
     },
+    {
+        id: "8",
+        iconImage: "/my-portfolio-react/img/juniorshowcase.png",
+        name: "Junior Showcase With React",
+        description: "The Junior Showcase website is the website for junior web developers to showcase their awesome projects. The user can sign up and login to their account to post their project. The project will be display in the homepaage with notification on the right side.",
+        technologies: "React, Redux, Firebase & Bootstarp 4",
+        href: "https://wippo-c6ee3.firebaseapp.com/"
+    },
 
 ]
 
