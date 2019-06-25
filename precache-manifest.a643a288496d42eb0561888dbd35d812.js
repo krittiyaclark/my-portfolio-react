@@ -1,22 +1,22 @@
 self.__precacheManifest = [
   {
-    "revision": "d04bad331d66c64f83bb",
+    "revision": "7e75b7efed2d52d0b83c",
     "url": "/krittiyaclark/krittiyaclark-portfolio-react/static/css/main.6b3c0ccc.chunk.css"
   },
   {
-    "revision": "d04bad331d66c64f83bb",
-    "url": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/main.d04bad33.chunk.js"
+    "revision": "7e75b7efed2d52d0b83c",
+    "url": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/main.7e75b7ef.chunk.js"
   },
   {
-    "revision": "df116914106a3d053252",
-    "url": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/1.df116914.chunk.js"
+    "revision": "d545835c93e7720e99fb",
+    "url": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/1.d545835c.chunk.js"
   },
   {
     "revision": "a96801ad3c12b380c898",
     "url": "/krittiyaclark/krittiyaclark-portfolio-react/static/js/runtime~main.a96801ad.js"
   },
   {
-    "revision": "b568e581507a1e05b0a5fa0e97a3b091",
+    "revision": "b3fa05300b812564495ccacf1633c9f8",
     "url": "/krittiyaclark/krittiyaclark-portfolio-react/index.html"
   }
 ];
